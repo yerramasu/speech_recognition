@@ -53,6 +53,8 @@ private let speechRecognizerTe = SFSpeechRecognizer(locale: Locale(identifier: "
     speechRecognizerRu.delegate = self
     speechRecognizerIt.delegate = self
     speechRecognizerEs.delegate = self
+    speechRecognizerHi.delegate = self
+    speechRecognizerTe.delegate = self
 
     SFSpeechRecognizer.requestAuthorization { authStatus in
       OperationQueue.main.addOperation {
@@ -172,7 +174,12 @@ private let speechRecognizerTe = SFSpeechRecognizer(locale: Locale(identifier: "
     case "it_IT":
       return speechRecognizerIt
     case "es_ES":
-        return speechRecognizerEs
+        return speechRecognizerE
+     case "hi_IN":
+	 return speechRecognizerHi
+      case "te_IN":
+	 return speechRecognizerTe
+	 	    
     default:
       return speechRecognizerFr
     }
