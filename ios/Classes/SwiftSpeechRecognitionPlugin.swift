@@ -15,6 +15,8 @@ public class SwiftSpeechRecognitionPlugin: NSObject, FlutterPlugin, SFSpeechReco
   private let speechRecognizerRu = SFSpeechRecognizer(locale: Locale(identifier: "ru_RU"))!
   private let speechRecognizerIt = SFSpeechRecognizer(locale: Locale(identifier: "it_IT"))!
   private let speechRecognizerEs = SFSpeechRecognizer(locale: Locale(identifier: "es_ES"))!
+private let speechRecognizerHi = SFSpeechRecognizer(locale: Locale(identifier: "hi_IN"))!
+private let speechRecognizerTe = SFSpeechRecognizer(locale: Locale(identifier: "te_IN"))!
 
   private var speechChannel: FlutterMethodChannel?
 
