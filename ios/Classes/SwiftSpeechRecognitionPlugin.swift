@@ -52,6 +52,7 @@ public class SwiftSpeechRecognitionPlugin: NSObject, FlutterPlugin, SFSpeechReco
     speechRecognizerRu.delegate = self
     speechRecognizerIt.delegate = self
     speechRecognizerEs.delegate = self
+    speechRecognizerHi.delegate = self
 
     SFSpeechRecognizer.requestAuthorization { authStatus in
       OperationQueue.main.addOperation {
